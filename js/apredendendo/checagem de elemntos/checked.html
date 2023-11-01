@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECANDO</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        font-size: 1.5rem;
+    }
+    .con{
+        margin: 1rem;
+        display: flex;
+        width: 20vh;
+    }
+    .card{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 20vh;
+        padding: 3px;
+    }
+    .container button{
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+        border-radius: 1rem;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="con">
+             <input type="checkbox" id="caixinha">
+            <label for="caixinha">Inscrever-se</label> <br>
+         </div>
+         <div class="card">
+            <input type="radio" id="VisaBtn" name="card">
+            <label for="VisaBtn">&nbsp Visa</label><br>
+        </div>
+        <div class="card">
+            <input type="radio" id="MasterCardBtn" name="card">
+            <label for="MasterCardBtn">&nbsp MasterCard</label><br>
+        </div>
+        <div class="card">
+            <input type="radio" id="InterBtn" name="card">
+            <label for="InterBtn">&nbsp Inter</label><br>
+        </div> <br>
+
+    <button type="submit" id="Enviar">Enviar</button><br>
+
+        <p id="EnvResult"></p>
+        <p id="PagueResult"></p>
+    </div>
+<script src="checked.js"></script>
+</body>
+</html>
